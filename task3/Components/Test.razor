@@ -1,0 +1,12 @@
+<MudGrid>
+    <MudItem xs="12" sm="6">
+        <MudTimePicker PickerVariant="PickerVariant.Dialog" Label="12 hours" AmPm="true" @bind-Time="time" />
+    </MudItem>
+    <MudItem xs="12" sm="6">
+        <MudTimePicker PickerVariant="PickerVariant.Dialog" Label="24 hours" @bind-Time="time" />
+    </MudItem>
+</MudGrid>
+
+@code{
+    TimeSpan? time = new TimeSpan(00, 45, 00);
+}
